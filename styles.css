@@ -1,0 +1,872 @@
+p {
+  font-family: "Inter";
+  margin: 0;
+  margin-bottom: 0;
+}
+
+a {
+  font-family: "Inter";
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.botonContactanos:hover,
+.botonContacto:hover,
+#botonEnviar:hover {
+  background-color: #4447fc;
+}
+
+.botonContactanos,
+.botonContacto {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBox {
+  display: grid;
+  grid-template-rows: repeat(36, 1fr);
+  grid-template-columns: 20px repeat(12, 1fr) 20px;
+  gap: 1.25rem;
+  padding: 0;
+  width: 100%;
+  max-height: 192rem;
+}
+
+.topBox {
+
+  background-color: #3D34F0;
+  grid-column: 1/15;
+  display: grid;
+  grid-template-columns: 20px repeat(12, 1fr) 20px;
+  gap: 1.25rem;
+  padding: 0;
+  width: 100%;
+  color: white;
+}
+
+.topBox a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cajaLogo {
+  grid-column: 2/ span 4;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.logo {
+  height: 3rem;
+}
+
+.textoTopBox {
+  font-size: 1.25rem;
+  grid-column: 9/14;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cajaImagen {
+  background-image: url(./Imagenes/banner1.png);
+  display: grid;
+  grid-column: 1/15;
+  grid-row: 2/7;
+  margin-top: -1.25rem;
+  margin-bottom: -1.25rem;
+  grid-template-columns: 20px repeat(12, 1fr) 20px;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.25rem;
+  max-height: 28.75rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cajaImagen p {
+  color: white;
+}
+
+.cajaHeader {
+  grid-column: 2 /span 4;
+  grid-row: 2/span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.textoHeader {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.textoSubheader {
+  width: 75%;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.botonContactanos {
+  background-color: #3D34F0;
+  grid-column: 2/span 3;
+  grid-row: 4 / span 1;
+  height: 3.5rem;
+  margin-top: 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cajaImagenNosotros {
+  grid-row: 8 / span 5;
+  grid-column: 2 / 8;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+
+.imagenNosotros {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.textoNosotros {
+  grid-row: 8/ span 4;
+  grid-column: 8 / span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.botonContacto {
+  margin-top: 0.5rem;
+  background-color: #3D34F0;
+  grid-column: 8/span 3;
+  grid-row: 12 / span 1;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 1.25rem;
+  color: white;
+}
+
+.titulosSeccion {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+#textoQuienesomos {
+  font-size: 1.45rem;
+}
+
+#nuestrosServicios {
+  grid-row: 13 / span 1;
+  grid-column: 2/span 5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cajaServicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  grid-row: 14/ span 8;
+  grid-column: 2/span 12;
+  justify-content: space-between;
+}
+
+.cajaServicioIndividual {
+  height: 20.1875rem;
+  width: calc(33.33% - 0.67rem);
+  background-color: #4A41FF;
+  border-radius: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+}
+
+.textoCajaServicio
+{
+  grid-row: 4/ span 1;
+  grid-column: 1 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.imagenServicio {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 4;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+#trabajosPrevios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/span 14;
+  grid-row: 22/span 6;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.carouselImagenes {
+  height: 25.56rem;
+  width: 56.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.carouselImagenes .carousel-item {
+  height: 25.56rem;
+}
+
+.carouselImagenes .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption {
+  margin-bottom: 13px;
+}
+
+#contactanos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 28/span 1;
+  grid-column: 1 / span 14;
+}
+
+#telefono1,
+#correo1,
+#correo2,
+#direccion {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+}
+
+#telefono1 {
+  grid-column: 2/ span 6;
+  grid-row: 29/span 1;
+
+}
+
+#correo1 {
+  grid-column: 2/ span 6;
+  grid-row: 30/span 1;
+}
+
+#correo2 {
+  grid-column: 2/ span 6;
+  grid-row: 31/span 1;
+}
+
+#direccion {
+  grid-column: 2/ span 6;
+  grid-row: 32/span 1;
+  display: flex;
+}
+
+.textoContacto {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  border-color: black;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#formNombre {
+  grid-row: 29/span 1;
+  grid-column: 9 / span 5;
+
+}
+
+#formCorreo {
+  grid-row: 30/span 1;
+  grid-column: 9 / span 5;
+}
+
+#formMensaje {
+  grid-row: 31/span 3;
+  grid-column: 9 / span 5;
+  position: relative;
+  height: 100%;
+
+}
+
+#formMensaje textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  padding: 15px;
+  resize: none; /* Prevents textarea resizing */
+}
+
+#formMensaje .mensaje-label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #666;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-family: "Inter"; /* To match your site's font */
+}
+
+#formMensaje textarea:focus + .mensaje-label,
+#formMensaje textarea:valid + .mensaje-label {
+  display: none;
+}
+
+
+#botonEnviar {
+  grid-row: 34/span 1;
+  grid-column: 9/span 5;
+  background-color: #4A41FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.65rem;
+  font-weight: 500;
+  border-radius: 1.25rem;
+}
+
+
+.icon {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.footer {
+  grid-row: 35/span 2;
+  grid-column: 1/span 14;
+  background-color: #3D34F0;
+  display: grid;
+  grid-template-columns: 20px repeat(12, 1fr) 20px;
+  ;
+  grid-template-rows: 1fr 1fr;
+}
+
+#llamanos,
+#siguenos {
+  margin-top: 1rem;
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+#llamanos {
+  grid-column: 9 / span 2;
+  grid-row: 1 / span 1;
+}
+
+#siguenos {
+  grid-column: 11 / span 2;
+  grid-row: 1 / span 1;
+
+}
+
+.contenedorSocialmedia {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+}
+
+.tituloFooter {
+  color: #6861FC;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #3D34F0;
+  transition: 0.4s;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.close-btn {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1071px) {
+  .textoHeader {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 699px) {
+
+  .mainBox {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(60, 1fr);
+    min-height: 286.5625rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainBox>* {
+    grid-column: 1 !important;
+    width: 100%;
+  }
+
+  .topBox {
+    width: 100%;
+    grid-row: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Add this to create space between logo and menu */
+    padding: 0 20px;
+    /* Add padding to prevent items from touching edges */
+  }
+
+
+  .textoTopBox {
+    display: none;
+  }
+
+  .cajaLogo {
+    margin: 0;
+    /* Ensure logo doesn't have unwanted margins */
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    /* Change from absolute positioning */
+    margin-left: auto;
+    /* Remove fixed margin-left */
+    transform: translateY(0);
+    /* Remove transform */
+    right: 0;
+    /* Remove right positioning */
+    top: 0;
+    /* Remove top positioning */
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .cajaImagen {
+    grid-column: span 1;
+    grid-row: 2/ span 4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cajaHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .botonContactanos {
+    width: 90%;
+  }
+
+  .textoNosotros {
+    grid-row: 6 / span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .botonContacto {
+    grid-row: 10;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cajaImagenNosotros {
+    display: flex;
+    justify-content: center;
+    grid-row: 11/span 3;
+    width: 100%;
+  }
+
+  .titulosSeccion {
+    font-size: 2rem;
+  }
+
+  .imagenNosotros {
+    width: 90%;
+
+  }
+
+  #textoQuienesomos {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  #nuestrosServicios {
+    grid-row: 14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cajaServicios {
+    grid-row: 15 / span 24;
+    justify-content: center;
+  }
+
+  .cajaServicioIndividual {
+    width: 80%;
+  }
+
+  #trabajosPrevios {
+    grid-row: 41 /span 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .carouselImagenes {
+    height: 25.56rem;
+    width: 90%;
+
+  }
+
+  #contactanos {
+    grid-row: 46 / span 1;
+  }
+
+  .textoContacto {
+    font-size: 1rem;
+
+  }
+
+  #contactanos,
+  #telefono1,
+  #correo1,
+  #correo2,
+  #direccion {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #telefono1 {
+    grid-row: 47 / span 1;
+  }
+
+  #correo1 {
+    grid-row: 48 / span 1;
+  }
+
+  #correo2 {
+    grid-row: 49 / span 1;
+  }
+
+  #direccion {
+    grid-row: 50 / span 1;
+  }
+
+  [id*="form"] {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  #formNombre {
+    grid-row: 51 / span 1;
+  }
+
+  #formCorreo {
+    grid-row: 52 / span 1;
+  }
+
+  #formMensaje {
+    grid-row: 53 / span 2;
+  }
+
+  #botonEnviar {
+    grid-row: 55;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    grid-row: 56 / span 5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #siguenos {
+    align-items: center;
+  }
+
+  #llamanos {
+    align-items: center;
+  }
+
+}
+
+
+@media (max-width: 1060px) and (min-width: 700px) {
+
+  .mainBox {
+    max-height: 213.5rem;
+    grid-template-rows: repeat(40, 1fr);
+  }
+
+  .cajaHeader {
+    grid-column: 2/ span 6;
+  }
+
+  .botonContactanos {
+    grid-row: 5 / span 1;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  #nuestrosServicios {
+    grid-column: 2/span 7;
+  }
+
+  #trabajosPrevios {
+    grid-row: 28;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  .carouselImagenes {
+    width: 100%;
+    min-height: 25.56rem;
+  }
+
+  .carouselImagenes .carousel-item {
+    height: 100%;
+  }
+
+  .carouselImagenes .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cajaServicioIndividual {
+    width: calc(50% - 0.5rem);
+    height: 60%;
+  }
+
+  #trabajosPrevios {
+    grid-row: 28;
+  }
+
+  #telefono1,
+  #correo1,
+  #correo2,
+  #direccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+    grid-column: 2/span 12;
+  }
+
+  #contactanos {
+    grid-row: 29;
+  }
+
+  #telefono1 {
+    grid-row: 30;
+  }
+
+  #correo1 {
+    grid-row: 31;
+  }
+
+  #correo2 {
+    grid-row: 32
+  }
+
+  #direccion {
+    grid-row: 33
+  }
+
+  .textoContacto {
+    width: 100%;
+  }
+
+  [id*="form"] {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #formNombre,
+  #formCorreo,
+  #formMensaje,
+  #botonEnviar {
+    grid-column: 4 / span 8;
+  }
+
+  #formNombre {
+    grid-row: 34;
+  }
+
+  #formCorreo {
+    grid-row: 35;
+  }
+
+  #formMensaje {
+    grid-row: 36/span 3
+  }
+
+  #botonEnviar {
+    grid-row: 39;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    grid-row: 40
+  }
+
+  .contenedorSocialmedia {
+    gap: 3rem;
+  }
+
+}
+
+@media (max-width: 1140px) {
+
+  #contactanos,
+  #telefono1,
+  #correo1,
+  #correo2,
+  #direccion {
+    gap: 0.2rem;
+  }
+}
+
+@media (max-width: 1130px) and (min-width: 1064px) {
+  #textoQuienesomos {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1063px) and (min-width: 821px) {
+  #textoQuienesomos {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 820px) and (min-width: 700px) {
+  #textoQuienesomos {
+    font-size: 0.9rem;
+  }
+}
